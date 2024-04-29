@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Homework</title>
+  </head>
+
+  <body>
+    <main>
+      <section
+        class="customer container"
+      >
+        <h1 class="customer__title">Registration</h1>
+        <form class="form" action="">
+          <div class="customer__form">
+            <div class="customer__form__card">
+              <label for="">fname</label>
+              <input placeholder="fname:" required id="fname" type="text" />
+            </div>
+            <div class="customer__form__card">
+              <label for="">lname</label>
+              <input placeholder="lname:" required id="lname" type="text" />
+            </div>
+            <div class="customer__form__card">
+              <label for="">phones</label>
+              <input placeholder="phones" required id="phones" type="number" />
+            </div>
+            <div class="customer__form__card">
+              <label for="">region</label>
+              <select name="" id="region">
+                <option value="">regionni tanlang</option>
+                <option value="Fargona">Fargona</option>
+                <option value="Toshkent">Toshkent</option>
+                <option value="Namangan">Namangan</option>
+                <option value="Samarqand">Samarqand</option>
+                <option value="Buxoro">Buxoro</option>
+                <option value="Andijon">Andijon</option>
+                <option value="Surxandaryo">Surxandaryo</option>
+                <option value="Navoi">Navoi</option>
+                <option value="Qashqadaryo">Qashqadaryo</option>
+                <option value="Xorazm">Xorazm</option>
+                <option value="Sirdaryo">Sirdaryo</option>
+                <option value="Jizzax">Jizzax</option>
+              </select>
+            </div>
+            <div class="customer__form__card">
+              <label for="">budget</label>
+              <input placeholder="budget" required id="budget" type="number" />
+            </div>
+          </div>
+          <button class="customer__btn" data-aos="zoom-in-left">Submit</button>
+        </form>
+      </section>
+
+      <section class="table__wrapper container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>
+                <select name="" id="sorting__fname">
+                  <option value="">fname</option>
+                  <option value="ascending">A-Z</option>
+                  <option value="descending">Z-A</option>
+                </select>
+              </th>
+              <th>
+                <select name="" id="sorting__lname">
+                  <option value="">lname</option>
+                  <option value="ascending">A-Z</option>
+                  <option value="descending">Z-A</option>
+                </select>
+              </th>
+              <th>phones</th>
+              <th>region</th>
+              <th>
+                <select name="" id="sorting__budget">
+                  <option value="">budget</option>
+                  <option value="descending">Yuqorisi</option>
+                  <option value="ascending">Eng kami</option>
+                </select>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/customer.js"></script>
+</html>
